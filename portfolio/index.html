@@ -4,25 +4,45 @@ Name: Nathaniel Davis
 Date Created: 09/03/2019
 Most recent revision: Development in progress
 -->
-<html>
-	<head>
-		<title> Nathaniel Davis's Portfolio </title>
-	</head>
+<html lang="en">
+	<header>
+		<head>
+			<title> Nathaniel Davis's Portfolio </title>
+		</head>
+	</header>
 	<body>
-		<h1> Portfolio for Nathaniel Davis </h1>
-		<hr />
-		<!-- I need to add links to projects.html, contact.html and testimonials.html --> 
-		<p>Links to other pages go here.</p>
-		<hr />
-		<h2><em>About Me</em></h2>
-		<p>My name is Nathaniel, I am 27 years old and still in school. I have a 3 year old son William and a wife named Katya. I live out in Lavon Texas right next to lake Lavon.</p>
-		<p></p>
-		<h2><em>Past Experiences</em></h2>
-		<p>Prior to working in software I was in the resturant managment bussiness. I am now a software QA analyst. I have written many automated scripts in the groovy language using a tool called Katalon.</p>
-		<p>I am learning more about software testing and the busniess of developing daily. I hope to one day be a developer myself.</p>
-		<h2><em>Hobbies</em></h2>
-		<p>I enjoy going to the lake with my son and wife. I also skateboard frequently. I am not any good but I have fun doing it. :P </p>
-		<p>I also spend alot of my time hanging out with my grandparents or other family memebers. They will not be around forever and I want to make sure my son has a chance to get to know them.</p>
-		<hr />
+		<main>
+			<h1> Portfolio for Nathaniel Davis </h1>
+			<hr />
+			<nav>
+				<!-- I need to add links to projects.html, contact.html and testimonials.html --> 
+				<p><a href="projects.html">Projects</a> <a href="contact.html">Contacts</a> <a href="testimonials.html">Testimonials<a/> </p>
+			</nav>
+			<hr />
+			<section>
+				<article id="about-me">
+					<h2><em>About Me</em></h2>
+					<img src="Images\YoungMe.jpg" alt= "Picture of Nathaniel"/>
+					<p>My name is Nathaniel, I am 27 years old and still in school. I have a 3 year old son William and a wife named Katya. I live out in Lavon Texas right next to lake Lavon.</p>
+					<p></p>
+				</article>
+				<article id="past">
+					<h2><em>Past Experiences</em></h2>
+					<img src="Images\Desk.jpg" alt="Pigture of Nathaniel's Desk"/>
+					<p>Prior to working in software I was in the restaurant management business. <strong>I am now a software QA analyst.</strong> I have written many automated scripts in the groovy language using a tool called Katalon.</p>
+					<p>I am learning more about software testing and the business of developing daily. <strong>I hope to one day be a developer myself.</strong></p>
+				</article>
+				<articleid="hobbies">
+					<h2><em>Hobbies</em></h2>
+					<img src="Images\Skatboard.jpg" alt="Picture of skateboard"/>
+					<p><span style="background-color: lightblue; border: thin solid darkblue;">I enjoy going to the lake with my son and wife. I skateboard frequently. I am not any good but I have fun doing it. :P </span></p>
+					<p>I spend a lot of my time hanging out with my grandparents or other family members. They will not be around forever and I want to make sure my son has a chance to get to know them.</p>
+				</article>
+			</section>
+			<footer>
+				<hr />
+				<p>&copy; 2020 Nathaniel Davis. All rights reserved. </p>
+			</footer>
+		</main>
 	</body>
 </html>
