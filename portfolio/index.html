@@ -7,9 +7,40 @@ Most recent revision: Development in progress
 <html lang="en">
 	<header>
 		<head>
-			<title> Nathaniel Davis's Portfolio </title>
-			<link href="Styles\teststyles.css" rel="stylesheet" type="text/css" />
+			<title>Nathaniel Davis's Portfolio </title>
+			<link href="styles/main.css" rel="stylesheet" type="text/css" />
 			<style>
+				caption {
+					font-weight: bold;
+					font-size: 1.2em;
+					margin-bottom: 8px;
+				}
+				table, th, td {
+					border: 1px solid #2B303A;
+					border-collapse: collapse;
+					padding: 5px 10px;
+				}
+				table {
+					width: 90%;
+					margin: auto;
+				}
+				tr {
+					height: 30px;
+				}
+				th {
+					background-color: #586BA4;
+					color: #E8EDDF;
+				}
+				tbody tr:nth-child(odd) {
+					background-color: #A3AECD;
+				}
+				
+				tbody tr:nth-child(even) {
+					background-color: #E0E4EE;
+				}
+				
+				
+				
 			</style>
 		</head>
 		<h1> Portfolio for Nathaniel Davis </h1>
@@ -17,11 +48,9 @@ Most recent revision: Development in progress
 	<body>
 		<main>
 			<nav class="border">
-			<hr style="border: thin dotted red;" />
-				<!-- I need to add links to projects.html, contact.html and testimonials.html --> 
-				<p><a href="projects.html">Projects</a> <a href="contact.html">Contacts</a> <a href="testimonials.html">Testimonials<a/> </p>
+				
+				<p><a href="projects.html">Projects</a> <br /> <a href="contact.html">Contacts</a> <br /> <a href="testimonials.html">Testimonials<a/> </p>
 			</nav>
-			<hr style="width: 50%; border: 2px solid blueviolet;" />
 			<section>
 				<article class="border" id="about-me">
 					<h2><em>About Me</em></h2>
@@ -34,29 +63,30 @@ Most recent revision: Development in progress
 					<img src="Images\Desk.jpg" alt="Pigture of Nathaniel's Desk" width="400"/>
 					<table>
 						<caption>Employment History </caption>
-						<tr>
-							<th>Years of Employment</th>
-							<th>Title</th>
-							<th>Company</th>
-						</tr>
-						</br>
-						<tr>
-							<td>September 31, 2017 - present</td>
-							<td>Software QA Analyst</td>
-							<td>EZLynx Webcetera</td>
-						</tr>
-						</br>
-						<tr>
-							<td>Augst 31, 2015 - September 31, 2017</td>
-							<td>Product Support</td>
-							<td>EZLynx Webcetera</td>
-						</tr>
-						</br>
-						<tr>
-							<td>November 1, 2010 - Augst 31, 2015</td>
-							<td>Assistant Manager, Regional Manager</td>
-							<td>Pizza Hut, IHOP, Freebirds</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>September 31, 2017 - present</td>
+								<td>Software QA Analyst</td>
+								<td>EZLynx Webcetera</td>
+							</tr>
+							<tr>
+								<td>Augst 31, 2015 - September 31, 2017</td>
+								<td>Product Support</td>
+								<td>EZLynx Webcetera</td>
+							</tr>
+							<tr>
+								<td>November 1, 2010 - Augst 31, 2015</td>
+								<td>Assistant Manager, Regional Manager</td>
+								<td>Pizza Hut, IHOP, Freebirds</td>
+							</tr>
+						</tbody>
 					</table>
 				</article>
 				<article id="hobbies">

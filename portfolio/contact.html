@@ -6,7 +6,13 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Contact Me</title>	
+        <title>Contact Me</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />	
+		<style>
+					#contact {
+				border: 2px solid #2B303A;
+			}
+		</style> 
     </head> 
     
     <body>
@@ -15,57 +21,56 @@
         </header>
 
         <nav>
-			<hr />
 			<p><a href="index.html">Home</a></p>
-			<hr />
-			<h2>Information Request</h2>
-			<form action="submit.html" method="post">
-				<!-- First Name label and textbox -->
-				<label for="first name">First Name:</label><br />
-				<input type="text" id="firstName" name="firstName"><br />
-				<!-- Last Name label and textbox -->
-				<label for="lastName">Last Name:</label><br />
-				<input type="text" id="lastName" name="lastName"><br />
-				<!-- Phone Number label and textbox -->
-				<label for="phone">Phone Number:</label><br />
-				<input type="text" id="phone" name="phone"><br />
-				<!-- Dropdown menu -->
-				<label for="contact">Best time to call:</label><br />
-				<select id="contact" name="contact">
-					<option value="default" selected>--Select One--</option>
-					<option value="morning">Morning (8AM - 12PM CST)</option>
-					<option value="afternoon">Afternoon (12PM - 5PM CST)</option>
-					<option value="evening"> Evening (5PM - 8PM CST)</option>
-				</select>
-				<!-- Check list -->
-				<fieldset>
-				<legend>I am interested in (check all that apply) </legend><br />
-				<input type="checkbox" id="frontend" name="interest" value="frontend">
-				<label for="frontend">Front End Web Development</label><br />
-				<input type="checkbox" id="backend" name="intrest" value="backend">
-				<label for="backend">Back End Web Development</label><br />
-				<input type="checkbox" id="database" name="intrest" value="database">
-				<label for="database">Database Design</label><br />
-				</fieldset>
-				<br />
-				<!-- Radio buttons -->
-				<fieldset>
-				<legend> I have filled in the client questionaire form:</legend><br />
-				<input type="radio" id="choice1" name="questionaire" value="yes">
-				<label for='choice1'>Yes</label><br />
-				<input type="radio" id="choice2" name="questionaire" value="no">
-				<label for='choice2'>No</label><br />
-				</fieldset>
-				<!-- Textarea -->
-				<label for="info">Additional Information</label><br />
-				<textarea id-"info" name="info"></textarea>
-				<!-- Submit button -->
-				<input type="submit" name="submit" value="submit">
-			</form>
-        </nav>
-
+		</nav>
+			<section>
+				<h2>Information Request</h2>
+				<form action="submit.html" method="post">
+					<!-- First Name label and textbox -->
+					<label for="first name">First Name:</label><br />
+					<input type="text" id="firstName" name="firstName"><br />
+					<!-- Last Name label and textbox -->
+					<label for="lastName">Last Name:</label><br />
+					<input type="text" id="lastName" name="lastName"><br />
+					<!-- Phone Number label and textbox -->
+					<label for="phone">Phone Number:</label><br />
+					<input type="text" id="phone" name="phone"><br />
+					<!-- Dropdown menu -->
+					<label for="contact" id="callTime">Best time to call:</label><br />
+					<select id="contact" name="contact">
+						<option value="default" selected>--Select One--</option>
+						<option value="morning">Morning (8AM - 12PM CST)</option>
+						<option value="afternoon">Afternoon (12PM - 5PM CST)</option>
+						<option value="evening"> Evening (5PM - 8PM CST)</option>
+					</select>
+					<!-- Check list -->
+					<fieldset>
+					<legend>I am interested in: (check all that apply) </legend><br />
+					<input type="checkbox" id="frontend" name="interest" value="frontend">
+					<label for="frontend">Front End Web Development</label><br />
+					<input type="checkbox" id="backend" name="intrest" value="backend">
+					<label for="backend">Back End Web Development</label><br />
+					<input type="checkbox" id="database" name="intrest" value="database">
+					<label for="database">Database Design</label><br />
+					</fieldset>
+					<br />
+					<!-- Radio buttons -->
+					<fieldset>
+					<legend> I have filled in the client questionaire form:</legend><br />
+					<input type="radio" id="choice1" name="questionaire" value="yes">
+					<label for='choice1'>Yes</label><br />
+					<input type="radio" id="choice2" name="questionaire" value="no">
+					<label for='choice2'>No</label><br />
+					</fieldset>
+					<!-- Textarea -->
+					<label for="info">Additional Information:</label><br />
+					<textarea id-"info" name="info"></textarea>
+					<!-- Submit button -->
+					<input type="submit" name="submit" value="submit">
+				</form>
+			</section>
         <footer>
-
+			<p>&copy; 2020 Nathaniel Davis. All rights reserved. </p>
         </footer>
     </body> 
 </html
