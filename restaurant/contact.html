@@ -6,7 +6,58 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Contact Us</title>	
+        <title>Contact Us</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			section {
+				text-align: center;
+			}
+
+			label, fieldset {
+				font-size: 1.1em;
+			}
+
+			input[type=text] {
+				border: 2px solid #333745;
+				width: 25%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				font-size: 1.1em;
+			}
+
+			fieldset {
+				background-color: #FFFFFF;
+				width: 100%;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #333745;
+			}
+
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+			}
+
+			input[type=submit]:hover {
+				background-color: #f2eded;
+				color: #546a7b;
+			}
+
+			textarea {
+				width: 30%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #333745;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+		</style>
+		
     </head> 
     
     <body>
@@ -20,50 +71,52 @@
 		<hr />
         </nav>
 		<section>
+		
 			<form action="submit.html" method="post">
 				<!-- Name label and textbox -->
-				<label for="name">Name:</label><br />
+				<label for="name">Name:</label>
 				<input type="text" id="Name" name="Name"><br />
 				<!-- Email label and textbox -->
-				<label for="email">Email:</label><br />
+				<label for="email">Email:</label>
 				<input type="text" id="email" name="email"><br />
 				<!-- Phone label and textbox -->
-				<label for="phone">Phone:</label><br />
+				<label for="phone">Phone:</label>
 				<input type="text" id="phone" name="phone"><br />
 				<!-- Dropdown menu -->
-				<label for="reason">Reason for Inquiry:</label><br />
+				<label for="reason">Reason for Inquiry:</label>
 				<select id="reason" name="reason">
 					<option value="Catering" selected>Catering</option>
 					<option value="Private">Private Party</option>
 					<option value="feedback">Feedback</option>
 					<option value="other">Other</option>
 				</select>
+				<br />
 				<!-- Textarea -->
-				<label for="info">Additional Information</label><br />
+				<label for="info" class="center">Additional Information:</label> <br />
 				<textarea id="info" name="info"></textarea>
 				<!-- Radio buttons -->
-				<legend>Have you been to the restaurant?</legend><br />
+				<legend>Have you been to the restaurant?</legend>
 				<input type="radio" id="choice1" name="been" value="yes">
-				<label for='choice1'>Yes</label><br />
+				<label for='choice1'>Yes</label>
 				<input type="radio" id="choice2" name="been" value="no">
-				<label for='choice2'>No</label><br />
+				<label for='choice2'>No</label>
 				<!-- Check list -->
-				<legend>Bst days to contact you:</legend><br />
+				<legend>Best days to contact you:</legend>
 				<input type="checkbox" id="monday" name="monday" value="monday">
-				<label for="monday">M</label><br />
+				<label for="monday">M</label>
 				<input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
-				<label for="tuesday">T</label><br />
+				<label for="tuesday">T</label>
 				<input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
-				<label for="wednesday">W</label><br />
+				<label for="wednesday">W</label>
 				<input type="checkbox" id="thursday" name="thursday" value="thursday">
-				<label for="thursday">TH</label><br />
+				<label for="thursday">TH</label>
 				<input type="checkbox" id="friday" name="friday" value="friday">
 				<label for="friday">F</label><br />
 				<!-- Submit button -->
 				<input type="submit" name="submit" value="Send Request">
 		</section>
-        <footer>
-			<hr />
+       <footer>
+		<hr />
 			<p>123 W fake street, Nowhere, Texas, 12345</p>
 			<p> Phone: (123)-456-7890</p> 
         </footer>
