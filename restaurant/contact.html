@@ -9,16 +9,13 @@
         <title>Contact Us</title>
 		<link href="styles/main.css" rel="stylesheet" type="text/css" />
 		<style>
-			section {
-				text-align: center;
-			}
-
-			label, fieldset {
+			label, legend{
 				font-size: 1.1em;
+				font-weight: bold;
 			}
 
 			input[type=text] {
-				border: 2px solid #333745;
+				border: 2px solid #0d1f2d;
 				width: 25%;
 				padding: 8px 8px;
 				margin: 12px 0;
@@ -27,12 +24,11 @@
 			}
 
 			fieldset {
-				background-color: #FFFFFF;
+				background-color: #fef9ff;
 				width: 100%;
 				padding: 12px 20px;
 				margin: 12px 0;
-				box-sizing: border-box;
-				border: 2px solid #333745;
+				box-sizing:	border-box;
 			}
 
 			select, textarea {
@@ -40,9 +36,16 @@
 				font-size: 1em;
 			}
 
+			input[type=submit] {
+				font-size: 1.2em;
+				background-color: #F71735;
+				color: #EEF5DB;
+				padding: 4px 8px;
+			}
+
 			input[type=submit]:hover {
-				background-color: #f2eded;
-				color: #546a7b;
+				background-color: #FE5F55;
+				color: #440D0F;
 			}
 
 			textarea {
@@ -51,11 +54,27 @@
 				padding: 12px 20px;
 				margin: 12px 0;
 				box-sizing: border-box;
-				border: 2px solid #333745;
+				border: 2px solid #0d1f2d;
 				border-radius: 3px;
 				background-color: #fff;
 				resize: none;
 			}
+			
+			section {
+				text-align: center;
+			}
+			
+			select {
+				width: 20%;
+				border: 2px solid #0d1f2d;
+				padding: 6px 12px;
+				margin: 12px 0;
+			}
+			
+			#check, #radio {
+				padding: 6px 12px;
+			}
+			
 		</style>
 		
     </head> 
@@ -67,21 +86,23 @@
         </header>
 
         <nav>
-		<p><a href="index.html">Home</a> <a href="contact.html">Contact</a> <a href="menu.html">Menu</a> </p>
-		<hr />
+			<p><a href="index.html">Home</a> <a href="contact.html">Contact</a> <a href="menu.html">Menu</a> </p>
         </nav>
-		<section>
+		<section class="clear-float">
 		
 			<form action="submit.html" method="post">
 				<!-- Name label and textbox -->
 				<label for="name">Name:</label>
-				<input type="text" id="Name" name="Name"><br />
+				<input type="text" id="Name" name="Name" /><br />
+				
 				<!-- Email label and textbox -->
 				<label for="email">Email:</label>
-				<input type="text" id="email" name="email"><br />
+				<input type="text" id="email" name="email" /><br />
+				
 				<!-- Phone label and textbox -->
 				<label for="phone">Phone:</label>
 				<input type="text" id="phone" name="phone"><br />
+				
 				<!-- Dropdown menu -->
 				<label for="reason">Reason for Inquiry:</label>
 				<select id="reason" name="reason">
@@ -91,16 +112,22 @@
 					<option value="other">Other</option>
 				</select>
 				<br />
+				
 				<!-- Textarea -->
-				<label for="info" class="center">Additional Information:</label> <br />
+				<label for="info" class="info">Additional Information:</label> <br />
 				<textarea id="info" name="info"></textarea>
+				
 				<!-- Radio buttons -->
+				<div id="radio">
 				<legend>Have you been to the restaurant?</legend>
 				<input type="radio" id="choice1" name="been" value="yes">
 				<label for='choice1'>Yes</label>
 				<input type="radio" id="choice2" name="been" value="no">
 				<label for='choice2'>No</label>
+				</div>
+				
 				<!-- Check list -->
+				<div id="check">
 				<legend>Best days to contact you:</legend>
 				<input type="checkbox" id="monday" name="monday" value="monday">
 				<label for="monday">M</label>
@@ -112,8 +139,11 @@
 				<label for="thursday">TH</label>
 				<input type="checkbox" id="friday" name="friday" value="friday">
 				<label for="friday">F</label><br />
+				</div>
+				
 				<!-- Submit button -->
 				<input type="submit" name="submit" value="Send Request">
+			</form>
 		</section>
        <footer>
 		<hr />

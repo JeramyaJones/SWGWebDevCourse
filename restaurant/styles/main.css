@@ -9,7 +9,7 @@ Date last modified:
 header, footer {
 	background-color: #F71735;
 	color: #EEF5DB;
-	height: 100px;
+	height: 100%;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 }
@@ -25,9 +25,48 @@ body{
 	max-width: 1100px;
 	margin: 0 auto;
 	border: 5px solid #333745;
+	height: 100%;
 }
 
 footer {
 	font-size:1.2em;
 	font-weight: bold;
+}
+
+nav {
+	border-top:;
+	border-bottom:;
+	margin-top:;
+	font-size: 1.3em;
+}
+
+nav a {
+	background-color:;
+	color:E11531;
+	padding: ;
+	border: thin solid #2B303A;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 10px;
+	width: 100px;
+	float:left;
+}
+
+nav a:visited {
+	color: #2B303A ;
+}
+
+nav a:hover {
+	background-color:E11531;
+	color:#E11531;
+	font-weight: bold;
+}
+
+nav a:active {
+	font-weight: bold;
+}
+
+.clear-float {
+	clear:both;
 }
